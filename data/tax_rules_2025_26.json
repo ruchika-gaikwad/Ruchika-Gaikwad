@@ -1,0 +1,63 @@
+{
+  "financial_year": "2025-26",
+  "assessment_year": "2026-27",
+  "legal_reference": "Income Tax Act, 1961 as amended by Finance Act, 2025",
+  "health_and_education_cess_rate": 0.04,
+  "old_regime": {
+    "standard_deduction": 50000,
+    "slabs": [
+      {"min": 0, "max": 250000, "rate": 0.0},
+      {"min": 250000, "max": 500000, "rate": 0.05},
+      {"min": 500000, "max": 1000000, "rate": 0.20},
+      {"min": 1000000, "max": null, "rate": 0.30}
+    ],
+    "section_87a": {
+      "income_limit": 500000,
+      "max_rebate": 12500,
+      "marginal_relief": false
+    },
+    "surcharge": [
+      {"threshold": 5000000, "rate": 0.10},
+      {"threshold": 10000000, "rate": 0.15},
+      {"threshold": 20000000, "rate": 0.25},
+      {"threshold": 50000000, "rate": 0.37}
+    ],
+    "deductions": {
+      "section_80c_cap": 150000,
+      "section_80ccd_1b_cap": 50000,
+      "section_80d": {
+        "self_family_cap": 25000,
+        "self_family_senior_cap": 50000,
+        "parents_cap": 25000,
+        "parents_senior_cap": 50000,
+        "preventive_checkup_cap": 5000
+      },
+      "section_24b_home_loan_interest_cap": 200000
+    }
+  },
+  "new_regime": {
+    "standard_deduction": 75000,
+    "slabs": [
+      {"min": 0, "max": 400000, "rate": 0.0},
+      {"min": 400000, "max": 800000, "rate": 0.05},
+      {"min": 800000, "max": 1200000, "rate": 0.10},
+      {"min": 1200000, "max": 1600000, "rate": 0.15},
+      {"min": 1600000, "max": 2000000, "rate": 0.20},
+      {"min": 2000000, "max": 2400000, "rate": 0.25},
+      {"min": 2400000, "max": null, "rate": 0.30}
+    ],
+    "section_87a": {
+      "income_limit": 1200000,
+      "max_rebate": 60000,
+      "marginal_relief": true
+    },
+    "surcharge": [
+      {"threshold": 5000000, "rate": 0.10},
+      {"threshold": 10000000, "rate": 0.15},
+      {"threshold": 20000000, "rate": 0.25}
+    ],
+    "deductions": {
+      "standard_deduction_only": true
+    }
+  }
+}
